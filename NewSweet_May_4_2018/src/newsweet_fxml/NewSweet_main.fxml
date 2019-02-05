@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="609.0" maxWidth="469.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="469.0" style="-fx-background-color: #000; -fx-opacity: 0.8; -fx-width: 400%; -fx-height: 400%; -fx-max-height: 400%; -fx-max-width: 400%; -fx-border-color: #e9e920;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newsweet_fxml.NewSweet_mainController">
+   <children>
+      <Label fx:id="passwordTextLabel" layoutX="41.0" layoutY="300.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="165.0" text="Password" textFill="WHITE">
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="userNameField" layoutX="41.0" layoutY="237.0" prefHeight="54.0" prefWidth="385.0" promptText="enter username or password" />
+      <PasswordField fx:id="passwordField" layoutX="41.0" layoutY="317.0" prefHeight="54.0" prefWidth="385.0" promptText="enter password " />
+      <Label fx:id="nameTextLabel" layoutX="41.0" layoutY="217.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="165.0" text="Username or Email Address" textFill="WHITE">
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </Label>
+      <Text fx:id="firstLoginLabel" fill="#e9e920" layoutX="93.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="newSweet" wrappingWidth="308.13671875">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="64.0" />
+         </font>
+      </Text>
+      <Button fx:id="loginButton" layoutX="41.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" onMouseClicked="#handleLoginButtonAction" prefHeight="78.0" prefWidth="385.0" style="-fx-background-color: #e9e920; -fx-opacity: 0.8;" text="Log In">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="311.0" layoutY="499.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="25.0" prefWidth="115.0" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Button fx:id="resetButton" layoutX="41.0" layoutY="499.0" mnemonicParsing="false" onAction="#resetButtonAction" prefHeight="25.0" prefWidth="115.0" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Text fx:id="locationText1" fill="#f5f2f2" layoutX="107.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="279.13671016693115">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text fill="#e9e920" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Screen" />
+   </children>
+</AnchorPane>

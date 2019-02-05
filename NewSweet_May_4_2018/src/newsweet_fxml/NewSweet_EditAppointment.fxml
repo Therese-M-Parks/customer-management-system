@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="dayDatePicker" prefHeight="722.0" prefWidth="488.0" style="-fx-background-color: #000; -fx-opacity: 0.8; -fx-border-color: #e9e920;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newsweet_fxml.NewSweet_EditAppointmentController">
+   <children>
+      <Label fx:id="editAppointmentLabel" layoutX="14.0" layoutY="14.0" text="Edit Appointment" textFill="#e9e920" />
+      <Text fill="#e9e920" layoutX="165.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Appointment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Separator layoutX="33.0" layoutY="120.0" prefHeight="1.0" prefWidth="410.0" />
+      <TextField fx:id="titleEdit" layoutX="43.0" layoutY="164.0" prefHeight="27.0" prefWidth="403.0" promptText="e.g. Meeting, Consulting" />
+      <TextField fx:id="descriptionEdit" layoutX="44.0" layoutY="224.0" prefHeight="27.0" prefWidth="178.0" />
+      <TextField fx:id="locationEdit" layoutX="263.0" layoutY="220.0" prefHeight="27.0" prefWidth="178.0" />
+      <TextField fx:id="contactEdit" layoutX="44.0" layoutY="277.0" prefHeight="27.0" prefWidth="178.0" />
+      <TextField fx:id="urlEdit" layoutX="263.0" layoutY="277.0" prefHeight="27.0" prefWidth="178.0" promptText="url of user" />
+      <Button fx:id="saveEditAppointment" layoutX="43.0" layoutY="510.0" mnemonicParsing="false" onAction="#saveEditAppointmentButtonAction" prefHeight="99.0" prefWidth="403.0" style="-fx-background-color: #e9e920; -fx-opacity: 0.8;" text="SAVE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Button fx:id="cancelEditAppointment" layoutX="50.0" layoutY="629.0" mnemonicParsing="false" onAction="#cancelEditAppointmentButtonAction" prefHeight="56.0" prefWidth="140.0" style="-fx-background-color: #000; -fx-border-color: #e9e920; -fx-border-radius: 5px; -fx-border-width: 2px;" text="Cancel" textFill="#e9e920">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Button fx:id="exitEditAppointment" layoutX="298.0" layoutY="629.0" mnemonicParsing="false" onAction="#exitEditAppointmentButtonAction" prefHeight="56.0" prefWidth="148.0" style="-fx-background-color: #e9e920; -fx-border-radius: 5px; -fx-border-width: 2px;" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Text fill="#e9e920" layoutX="43.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="46.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="264.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="url" wrappingWidth="52.64355446025729">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="resetEditButton" layoutX="372.0" layoutY="101.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="70.0" style="-fx-background-color: #000; -fx-border-color: #e9e920; -fx-border-width: 2px;" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Text fill="#e9e920" layoutX="146.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save and return to home screen">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="263.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="43.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="194.99998080730438">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="47.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="269.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="end">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="-191.0" layoutY="202.0" />
+      <DatePicker fx:id="dayPicker" layoutX="165.0" layoutY="453.0" />
+      <Text fill="#e9e920" layoutX="168.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="startTimeCB" layoutX="44.0" layoutY="393.0" prefHeight="25.0" prefWidth="178.0" />
+      <ComboBox fx:id="endTimeCB" layoutX="263.0" layoutY="391.0" prefHeight="25.0" prefWidth="178.0" />
+      <Text fx:id="oldStartText" fill="WHITE" layoutX="46.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="START" wrappingWidth="148.00000267848372">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="72.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="114.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="91.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="316.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="75.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="192.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="297.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="12.9267578125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="oldEndText" fill="WHITE" layoutX="270.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="END" wrappingWidth="173.9999988079071">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="47.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="old start time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#e9e920" layoutX="270.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="old end time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
